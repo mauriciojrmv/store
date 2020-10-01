@@ -1,0 +1,25 @@
+{
+  "name": "store",
+  "version": "0.0.1",
+  "description": "cap, store, ecommerce",
+  "main": "app.js",
+  "scripts": {
+    "start": "node  ./Store/app.js",
+    "dev": "nodemon ./Store/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Fernando Quiroga",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^3.2.0",
+    "body-parser": "^1.19.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "mssql": "^6.2.3",
+    "path": "^0.12.7",
+    "tedious": "^9.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}

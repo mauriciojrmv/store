@@ -1,0 +1,113 @@
+<%- include("partials/head") %>
+
+<div class="container">
+    <div class="checkout-section">
+        <div>
+            <form action="{{ route('checkout.store') }}" method="POST" id="payment-form">
+                <h2>Detalles Personales</h2>
+
+                <div class="form-group">
+                    <label for="email">Direccion Email</label>
+                    
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="direccion">Direccion</label>
+                    <input type="text" class="form-control" id="direccion" name="direccion" placeholder="Direccion" required>
+                </div>
+
+                <div class="half-form">
+                    <div class="form-group">
+                        <label for="departamento">Departamento</label>
+                        <input type="text" class="form-control" id="departamento" name="departamento" placeholder="Departamento" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="ciudad">Ciudad</label>
+                        <input type="text" class="form-control" id="ciudad" name="ciudad" placeholder="Ciudad" required>
+                    </div>
+                </div> <!-- fin primera parte de datos -->
+
+                <div class="half-form">
+                    <div class="form-group">
+                        <label for="codigopostal">Codigo Postal</label>
+                        <input type="text" class="form-control" id="postalcode" name="postalcode" placeholder="Codigo Postal">
+                    </div>
+                    <div class="form-group">
+                        <label for="telefono">Telefono</label>
+                        <input type="text" class="form-control" id="telefono" name="telefono" placeholder="Telefono" required>
+                    </div>
+                </div> <!-- fin segunda parte de datos -->
+
+                <div class="spacer"></div>
+
+               
+
+              
+<!------------------tarjeta---------------------->
+             
+                <div class="spacer"></div>
+
+               
+            </form>        
+        </div>
+
+
+
+        <div class="checkout-table-container">
+            <h2>Su Orden</h2>
+
+            <div class="checkout-table">
+                
+                <div class="checkout-table-row">
+                    <div class="checkout-table-row-left">
+                        <img src="images/cel1.jpeg" alt="item" class="checkout-table-img">
+                        <div class="checkout-item-details">
+                            <div class="checkout-table-item">Celular 1</div>
+                            <div class="checkout-table-description">Detalles del celular</div>
+                            <div class="checkout-table-price">Bs 2100</div>
+                        </div>
+                    </div> <!-- fin de checkout table -->
+
+                    <div class="checkout-table-row-right">
+                        <div class="checkout-table-quantity">1</div>
+                    </div>
+                </div> <!-- fin de la checkout table row -->
+            
+
+            </div> <!-- fin de check out table -->
+
+            <div class="checkout-totals">
+                <div class="checkout-totals-left">
+                    Subtotal <br>
+                
+                    Envio<br>
+                    <span class="checkout-totals-total">Total</span>
+
+                </div>
+
+                <div class="checkout-totals-right">
+                    Bs2100 <br>
+                    
+                    Bs0 <br>
+                    <span class="checkout-totals-total">Bs2100</span>
+
+                </div>
+            </div> <!-- fin de totales de checkout -->
+            <h2>Forma de pago</h2>
+
+            
+
+            <button type="submit" id="complete-order" class="btn">Completar Orden &#8594;</button>
+
+         
+                
+        </div>
+
+    </div> <!-- fin del checkout -->
+</div>
+
+<%- include("partials/foot") %>

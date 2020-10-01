@@ -1,0 +1,82 @@
+<%- include("partials/head") %>
+
+<div class="small-container carrito-pagina">
+    <table>
+        <tr>
+            <th>Producto</th>
+            <th>Cantidad</th>
+            <th>Subtotal</th>
+        </tr>
+        <!-------------------productos------------------------->
+        <tr>
+            <td>
+                <div class="carrito-info">
+                    <img src="images/cel1.jpeg">
+                    <div>
+                        <p>Celular Huawei</p>
+                        <small>Precio: Bs 2100</small>
+                        <br>
+                        <a href="">Remover</a>
+                    </div>
+                </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>Bs 2100</td>
+        </tr>
+
+        <tr>
+            <td>
+                <div class="carrito-info">
+                    <img src="images/pc1.jpg">
+                    <div>
+                        <p>Computadora 1</p>
+                        <small>Precio: Bs 7000</small>
+                        <br>
+                        <a href="">Remover</a>
+                    </div>
+                </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>Bs 7000</td>
+        </tr>
+
+        <tr>
+            <td>
+                <div class="carrito-info">
+                    <img src="images/tv1.jpg">
+                    <div>
+                        <p>Televisor 1</p>
+                        <small>Precio: Bs 5000</small>
+                        <br>
+                        <a href="">Remover</a>
+                    </div>
+                </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>Bs 5000</td>
+        </tr>
+    </table>
+
+    <div class="precio-total">
+        <table>
+            <tr>
+                <td>Subtotal</td>
+                <td>Bs 200</td>
+            </tr>
+            <tr>
+                <td>Total</td>
+                <td>Bs 200</td>
+            </tr>
+        </table>
+    </div>
+    <div class="opcion-seguir">
+        <a href="productos" class="btn">&#8592; Seguir comprando</a>
+    </div>
+
+    <div class="opcion-pago">
+        <a href="checkout" class="btn">Proceder al pago &#8594;</a>
+    </div>
+    
+</div>
+
+<%- include("partials/foot") %>

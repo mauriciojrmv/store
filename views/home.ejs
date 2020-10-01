@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="images/Logofire.png">
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="./home">Inicio</a></li>
+                        <li><a href="./productos">Productos</a></li>
+                        <li><a href="https://www.facebook.com/mauricio.mattinenvaldez">Contactanos</a></li>
+                        <li><a href="./cuenta">Cuenta</a></li>
+                    </ul>
+                </nav>
+                <a href="./carrito"><img src="images/cart.png" width="30px" height="30px"></a>
+                <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <h1>Los mejores productos<br>Con nosotros!</h1>
+                    <p>Un proyecto realizado por estudiantes de la uagrm sistemas de informacion</p>
+                    <a href="productos" class="btn">Explora ahora &#8594;</a>
+                </div>
+                <div class="col-2">
+                    <img src="images/imagen1.jpeg">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------------------------------------------categoria destacados--------------------------------------------------->
+    <div class="categories">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3">
+                    <img src="images/categoria-celulares.jpg">
+                </div>
+                <div class="col-3">
+                    <img src="images/categoria-computadora.jpg">
+                </div>
+                <div class="col-3">
+                    <img src="images/categoria-televisores.jpg">
+                </div>
+            </div>
+        </div>
+       
+    </div>
+     <!-------------------------------------------productos destacados--------------------------------------------------->
+    <div class="small-container">
+        <h2 class="titulo">Productos Destacados</h2>
+        <div class="row">
+            <div class="col-4">
+                <a href="producto-detalle"><img src="images/cel1.jpeg"></a>
+                <a href="producto-detalle"><h4>Celular 1</h4></a>
+                <p>Bs 2100</p>
+            </div>
+
+            <div class="col-4">
+                <img src="images/cel2.jpeg">
+                <h4>Celular 2</h4>
+                <p>Bs 2100</p>
+            </div>
+
+            <div class="col-4">
+                <img src="images/cel3.jpeg">
+                <h4>Celular 3</h4>
+                <p>Bs 2100</p>
+            </div>
+
+            <div class="col-4">
+                <img src="images/pc1.jpg">
+                <h4>Pc 1</h4>
+                <p>Bs 2100</p>
+            </div>
+        </div>
+        <!-------------------------------------------ultimos productos--------------------------------------------------->
+        <h2 class="titulo">Ultimos Productos</h2>
+        <div class="row">
+            <div class="col-4">
+                <img src="images/tv1.jpg">
+                <h4>Televisor 1</h4>
+                <p>Bs 2100</p>
+            </div>
+
+            <div class="col-4">
+                <img src="images/cel2.jpeg">
+                <h4>Celular 2</h4>
+                <p>Bs 2100</p>
+            </div>
+
+            <div class="col-4">
+                <img src="images/cel3.jpeg">
+                <h4>Celular 3</h4>
+                <p>Bs 2100</p>
+            </div>
+
+            <div class="col-4">
+                <img src="images/pc1.jpg">
+                <h4>Pc 1</h4>
+                <p>Bs 2100</p>
+            </div>
+        </div>
+    </div>
+
+     <!-------------------------------------------marcas--------------------------------------------------->
+     <div class="marcas">
+         <div class="small-container">
+             <div class="row">
+                <div class="col-5">
+                    <img src="images/logoapple.png">
+                </div>
+
+                <div class="col-5">
+                    <img src="images/logohuawei.png">
+                </div>
+
+                <div class="col-5">
+                    <img src="images/logosamsung.png">
+                </div>
+
+                <div class="col-5">
+                    <img src="images/logosony.png">
+                </div>
+
+                <div class="col-5">
+                    <img src="images/logomsi.jpg">
+                </div>
+             </div>
+         </div>
+     </div>
+
+<%- include("partials/foot.ejs") %>
+
