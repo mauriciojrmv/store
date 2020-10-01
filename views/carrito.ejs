@@ -3,25 +3,25 @@
 <div class="small-container carrito-pagina">
     <table>
         <tr>
-            <th>Producto</th>
-            <th>Cantidad</th>
-            <th>Subtotal</th>
+            <th><span class="cart-item cart-header cart-column">Producto</span></th>
+            <th><span class="cart-quantity cart-header cart-column">Cantidad</span></th>
+            <th><span class="cart-price cart-header cart-column">Precio</span></th>
         </tr>
         <!-------------------productos------------------------->
         <tr>
             <td>
                 <div class="carrito-info">
-                    <img src="images/cel1.jpeg">
+                    <img class="cart-item-image" src="images/cel1.jpeg">
                     <div>
-                        <p>Celular Huawei</p>
-                        <small>Precio: Bs 2100</small>
+                        <p><span class="cart-item-title">Celular Huawei</span></p>
+                        <small><span class="cart-price cart-column">Precio: Bs 2100</span></small>
                         <br>
-                        <a href="">Remover</a>
+                        <button class="btn1 btn-danger" type="button">Remover</button>
                     </div>
                 </div>
             </td>
-            <td><input type="number" value="1"></td>
-            <td>Bs 2100</td>
+            <td><input class="cart-quantity-input" type="number" value="1"></td>
+            <td><span class="cart-price cart-column">Bs 2100</span></td>
         </tr>
 
         <tr>
@@ -60,8 +60,8 @@
     <div class="precio-total">
         <table>
             <tr>
-                <td>Subtotal</td>
-                <td>Bs 200</td>
+                <td>Total</td>
+                <td span class="cart-total-price">Bs 200</span></td>
             </tr>
             <tr>
                 <td>Total</td>
