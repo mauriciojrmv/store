@@ -397,7 +397,7 @@ input:focus
 /*********************************carrito************************/
 .carrito-pagina
 {
-    margin:80px;
+    margin:0px;
 }
 table
 {
@@ -431,6 +431,18 @@ td a
 {
     color: #ff523b;
     font-size: 12px;       
+}
+td .btn1
+{
+  display: inline-block;
+  background-color: #ff523b;
+  color: #fff; 
+  border-radius: 10px;
+  transition: background 0.5; 
+}
+td .btn1:hover
+{
+    background: #563434;
 }
 td img
 {
@@ -617,6 +629,19 @@ form a
     font-size: 22px;
     line-height: 2.2;
   }
+
+ /****************responsive*****************/
+  @media only screen and (max-width: 800px)
+{
+    .checkout-section {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 30px;
+        margin: 40px auto 80px;
+      }
+    .checkout-section .checkout-table-container {
+        margin-left: 0px;
+}
 
 /*****************gracias******************/
 .thank-you-section {
